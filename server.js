@@ -614,4 +614,18 @@ initializeDatabase().then(() => {
     console.log(`Auth endpoints: http://localhost:${PORT}/api/auth/register, http://localhost:${PORT}/api/auth/login`);
     console.log('AFTER app.listen: Server should be alive and listening!');
   });
-}); 
+}); // Start server immediately
+app.listen(PORT, () => {
+  console.log(`Server running on port ${PORT}`);
+  console.log("Health check: http://localhost:" + PORT + "/api/health");
+  console.log("Root endpoint: http://localhost:" + PORT + "/");
+  console.log("AFTER app.listen: Server should be alive and listening!");
+});
+
+// Initialize database in background
+initializeDatabase().then(() => {
+  console.log("Database initialized successfully");
+}).catch((error) => {
+  console.error("Database initialization failed:", error);
+  console.log("Server is still running without database");
+});
