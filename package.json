@@ -1,1 +1,29 @@
-{"name":"albisystem-backend","version":"1.0.0","description":"AlbiSystem Backend API","main":"server.js","scripts":{"start":"node server.js","build":"echo \"Build completed\""},"dependencies":{"express":"^5.1.0","cors":"^2.8.5","bcryptjs":"^2.4.3","jsonwebtoken":"^9.0.2","sequelize":"^6.37.1","sqlite3":"^5.1.7","pg":"^8.11.3","pg-hstore":"^2.3.4","nodemailer":"^7.0.5","puppeteer":"^24.13.0","xlsx":"^0.18.5","multer":"^1.4.5-lts.1","helmet":"^7.1.0","compression":"^1.7.4"},"engines":{"node":"18.x"},"keywords":["api","backend","pricing","albisystem"],"author":"AlbiLogistics","license":"MIT"}
+{
+  "name": "albisystem-backend",
+  "version": "1.0.0",
+  "description": "AlbiSystem Backend API",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "build": "echo \"Build completed\""
+  },
+  "dependencies": {
+    "express": "^5.1.0",
+    "cors": "^2.8.5",
+    "bcryptjs": "^2.4.3",
+    "jsonwebtoken": "^9.0.2",
+    "sequelize": "^6.37.1",
+    "sqlite3": "^5.1.7",
+    "pg": "^8.11.3",
+    "pg-hstore": "^2.3.4",
+    "multer": "^1.4.5-lts.1",
+    "helmet": "^7.1.0",
+    "compression": "^1.7.4"
+  },
+  "engines": {
+    "node": "18.x"
+  },
+  "keywords": ["api", "backend", "pricing", "albisystem"],
+  "author": "AlbiLogistics",
+  "license": "MIT"
+}
