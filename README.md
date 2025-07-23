@@ -68,4 +68,4 @@ The landing page uses a simple HTTP server setup. All animations are handled in 
 
 ## Backup Information
 
-This working version was restored from `backup-working-login-20250706-013814/landing-client/landing-vite/` and represents the most recent working state of the landing page with all Vite animations intact. 
+This working version was restored from `backup-working-login-20250706-013814/landing-client/landing-vite/` and represents the most recent working state of the landing page with all Vite animations intact. # Railway Deployment Fix
