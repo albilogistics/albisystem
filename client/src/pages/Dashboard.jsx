@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import MetricCard from '../components/MetricCard';
 import axios from 'axios';
+import { API_ENDPOINTS } from '../config/api';
 import { 
   DollarSign, 
   TrendingUp, 
@@ -51,11 +52,11 @@ const Dashboard = () => {
       // const headers = { 'Authorization': `Bearer ${token}` };
 
       // Fetch orders data without authentication
-      const ordersResponse = await axios.get('http://localhost:3001/api/orders');
+      const ordersResponse = await axios.get(API_ENDPOINTS.ORDERS);
       const orders = ordersResponse.data.success ? ordersResponse.data.data : [];
 
       // Fetch financing analytics without authentication
-      const financingResponse = await axios.get('http://localhost:3001/api/financing/analytics');
+      const financingResponse = await axios.get(API_ENDPOINTS.FINANCING_ANALYTICS);
       const financingData = financingResponse.data.success ? financingResponse.data.data : {};
 
       // Calculate metrics

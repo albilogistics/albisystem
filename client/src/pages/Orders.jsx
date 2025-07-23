@@ -290,7 +290,7 @@ const Orders = () => {
         notificationType = 'success';
         break;
       case 'paid':
-        message = `Order ${order.orderNumber} payment received. Funds cleared - submit order to Assurant.`;
+        message = `Order ${order.orderNumber} payment received. Funds cleared - submit order to AlbiSystem.`;
         notificationType = 'success';
         break;
       case 'fulfilled':

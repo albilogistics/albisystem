@@ -118,7 +118,7 @@ const PriceDashboard = () => {
     const link = document.createElement('a');
     const url = URL.createObjectURL(blob);
     link.setAttribute('href', url);
-    link.setAttribute('download', `assurant-prices-${new Date().toISOString().split('T')[0]}.csv`);
+    link.setAttribute('download', `albisystem-prices-${new Date().toISOString().split('T')[0]}.csv`);
     link.style.visibility = 'hidden';
     document.body.appendChild(link);
     link.click();
@@ -243,7 +243,7 @@ const PriceDashboard = () => {
           <div className="flex justify-between items-start mb-4">
             <div>
           <h1 className="text-3xl font-bold text-m2-dark-on-surface mb-2">
-            Assurant Pricing Dashboard
+            AlbiSystem Pricing Dashboard
           </h1>
           <p className="text-m2-dark-on-surface-variant">
             Venezuela pricing with real-time calculations and overrides

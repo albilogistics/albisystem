@@ -32,7 +32,7 @@ const AdminSettings = () => {
   
   const [settings, setSettings] = useState({
     general: {
-      companyName: 'Assurant Pricing',
+              companyName: 'AlbiSystem',
       timezone: 'UTC-5',
       language: 'English',
       currency: 'USD',
@@ -125,7 +125,7 @@ const AdminSettings = () => {
     if (window.confirm('Are you sure you want to reset all settings to default values?')) {
       const defaultSettings = {
         general: {
-          companyName: 'Assurant Pricing',
+          companyName: 'AlbiSystem',
           timezone: 'UTC-5',
           language: 'English',
           currency: 'USD',

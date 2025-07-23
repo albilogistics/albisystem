@@ -118,7 +118,7 @@ const Sidebar = () => {
             <div className="absolute -top-1 -right-1 w-4 h-4 bg-green-500 rounded-full border-2 border-black pulse-glow"></div>
           </div>
           <div>
-            <h1 className="text-xl font-bold gradient-text">Assurant</h1>
+            <h1 className="text-xl font-bold gradient-text">AlbiSystem</h1>
             <p className="text-xs text-zinc-400">Pricing Platform</p>
           </div>
         </div>

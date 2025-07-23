@@ -40,7 +40,7 @@ const DashboardLayout = ({ children }) => {
       <div className="flex-1 flex flex-col">
         {/* Top bar */}
         <header className="h-16 flex items-center justify-between px-8 bg-zinc-900 border-b border-zinc-800">
-          <div className="text-lg font-semibold tracking-wide text-white">Assurant Pricing Dashboard</div>
+          <div className="text-lg font-semibold tracking-wide text-white">AlbiSystem Pricing Dashboard</div>
           <div className="flex items-center space-x-4">
             <button className="relative p-2 text-zinc-400 hover:text-white hover:bg-zinc-800 rounded-lg transition-all duration-200">
               <Bell className="w-5 h-5" />

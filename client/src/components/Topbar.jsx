@@ -187,7 +187,7 @@ const Topbar = () => {
                   </div>
                   <div>
                     <p className="text-sm font-semibold text-white">Jean Paul</p>
-                    <p className="text-xs text-zinc-400">jean.paul@assurant.com</p>
+                    <p className="text-xs text-zinc-400">jean.paul@albisystem.com</p>
                   </div>
                 </div>
               </div>
