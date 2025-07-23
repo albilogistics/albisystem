@@ -1,13 +1,12 @@
-console.log("=== SERVER STARTING ===");
 const express = require("express");
 const cors = require("cors");
+
 const app = express();
 const PORT = process.env.PORT || 3001;
 
 app.use(cors());
 app.use(express.json());
 
-// Root endpoint for basic health check
 app.get("/", (req, res) => {
   res.status(200).json({ 
     status: "healthy", 
@@ -16,7 +15,6 @@ app.get("/", (req, res) => {
   });
 });
 
-// Health check endpoint
 app.get("/api/health", (req, res) => {
   res.status(200).json({ 
     status: "healthy", 
@@ -25,7 +23,6 @@ app.get("/api/health", (req, res) => {
   });
 });
 
-// Test endpoint without authentication
 app.get('/api/test', (req, res) => {
   res.json({
     success: true,
@@ -34,7 +31,6 @@ app.get('/api/test', (req, res) => {
   });
 });
 
-// Placeholder endpoints for functionality
 app.get('/api/costs', (req, res) => {
   res.json({
     success: true,
@@ -71,5 +67,4 @@ app.listen(PORT, () => {
   console.log(`Server running on port ${PORT}`);
   console.log("Health check: http://localhost:" + PORT + "/api/health");
   console.log("Root endpoint: http://localhost:" + PORT + "/");
-  console.log("AFTER app.listen: Server should be alive and listening!");
 });
