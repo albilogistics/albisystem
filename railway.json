@@ -1,1 +1,10 @@
-{"build":{"builder":"nixpacks"},"deploy":{"startCommand":"node server.js","healthcheckPath":"/","healthcheckTimeout":300}}
+{
+  "build": {
+    "builder": "nixpacks"
+  },
+  "deploy": {
+    "startCommand": "node server.js",
+    "healthcheckPath": "/",
+    "healthcheckTimeout": 300
+  }
+} 
