@@ -1,19 +1,17 @@
 {
-  "name": "albisystem-backend",
-  "version": "1.0.0",
-  "description": "AlbiSystem Backend API",
-  "main": "server.js",
+  "name": "fondea-mono",
+  "private": true,
+  "version": "0.1.0",
+  "workspaces": ["apps/*", "packages/*"],
   "scripts": {
-    "start": "node server.js"
-  },
-  "dependencies": {
-    "express": "^5.1.0",
-    "cors": "^2.8.5"
+    "dev": "npm run dev --workspace @fondea/web",
+    "build": "npm run build --workspace @fondea/web",
+    "start": "npm run start --workspace @fondea/web",
+    "lint": "echo 'lint placeholder'",
+    "test": "echo 'test placeholder'"
   },
   "engines": {
-    "node": "18.x"
-  },
-  "keywords": ["api", "backend", "pricing", "albisystem"],
-  "author": "AlbiLogistics",
-  "license": "MIT"
+    "node": ">=18.18.0",
+    "npm": ">=9"
+  }
 }
